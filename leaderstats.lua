@@ -9,7 +9,7 @@ game.Players.PlayerAdded:Connect(function(player)
 	
 	local coins = Instance.new("IntValue")
 	coins.Parent = leaderstats
-	coins.Name = "Your Current"
+	coins.Name = "Your Currency"
 	
 	local success, result = pcall(function()
 		return savePlayerStats:GetAsync(player.UserId)
